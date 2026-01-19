@@ -8,7 +8,7 @@ export const SearchAllocate: React.FC = () => {
   const [needsAC, setNeedsAC] = useState<null | boolean>(null);
   const [needsWash, setNeedsWash] = useState<null | boolean>(null);
   const [results, setResults] = useState<Room[]>([]);
-  const [allocation, setAllocation] = useState<Room | null>(null);
+  const [_, setAllocation] = useState<Room | null>(null);
   const [msg, setMsg] = useState<string>("");
   const [isSearching, setIsSearching] = useState(false);
 
